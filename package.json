@@ -1,0 +1,17 @@
+{
+  "name": "ca-scout-ai",
+  "version": "1.0.0",
+  "description": "AI Advisory, Notification & Circular Scout for Chartered Accountants",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y http-server ./ -p 3000"
+  },
+  "keywords": [
+    "ca",
+    "scout",
+    "ai",
+    "regulatory-updates"
+  ],
+  "author": "Antigravity",
+  "license": "ISC"
+}

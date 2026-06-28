@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Advisory, Notification & Circular Scout | CA Portal</title>
+    <!-- Google Fonts for professional typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand-container">
+                <div class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="brand-name">
+                    <h2>Scout<span>CA</span></h2>
+                    <p>AI ADVISORY SCOUT</p>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#dashboard" class="nav-item active" data-tab="dashboard">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#circulars" class="nav-item" data-tab="circulars">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span>Regulatory Updates</span>
+                    <span class="badge" id="sidebar-badge-count">14</span>
+                </a>
+                <a href="#scout-config" class="nav-item" data-tab="scout-config">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span>Scout Config</span>
+                </a>
+                <a href="#archive" class="nav-item" data-tab="archive">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"></path></svg>
+                    <span>6 PM Archives</span>
+                </a>
+                <a href="#chat-advisor" class="nav-item" data-tab="chat-advisor">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Ask Scout AI</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">SA</div>
+                    <div class="user-info">
+                        <span class="user-name">Scout AI</span>
+                        <span class="user-role">Chartered Accountant</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header-bar">
+                <div class="header-left">
+                    <h1 id="page-title">Dashboard Overview</h1>
+                    <p class="current-date" id="live-time">June 28, 2026 | 10:00 AM</p>
+                </div>
+                <div class="header-right">
+                    <!-- Status Strip -->
+                    <div class="status-strip">
+                        <span class="pulse-indicator"></span>
+                        <span class="status-text">AI Scout Active</span>
+                        <span class="divider">|</span>
+                        <span class="status-time">Daily Run: 6:00 PM</span>
+                    </div>
+                    <!-- Notification Button -->
+                    <button class="icon-btn" id="run-scout-top-btn" title="Run manual scout scan">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                        <span>Scan Now</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- TAB CONTENT: DASHBOARD -->
+            <section id="tab-dashboard" class="tab-pane active">
+                <!-- Stats Overview Row -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper gold">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Circulars (48h)</h3>
+                            <p class="stat-number" id="stats-circulars-count">14</p>
+                            <span class="stat-trend positive">↑ 3 new in last 12 hrs</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper navy">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Urgent Action Items</h3>
+                            <p class="stat-number" id="stats-urgent-count">3</p>
+                            <span class="stat-trend critical">Requires client advisory</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper bg-gold-light">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Acts Monitored</h3>
+                            <p class="stat-number">4</p>
+                            <span class="stat-trend neutral">IT, GST, MCA, SEBI</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper green">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Last Scout Status</h3>
+                            <p class="stat-number text-success" style="font-size: 1.8rem; font-weight: 700;">SUCCESS</p>
+                            <span class="stat-trend neutral">Today, 06:00 AM scan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Column 1: Live Feed Quick View -->
+                    <div class="dashboard-card main-feed-view">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h2 class="section-title">Latest Regulatory Updates (Last 48 Hours)</h2>
+                                <p class="card-subtitle">Real-time updates gathered from monitored portals</p>
+                            </div>
+                            <a href="#circulars" class="gold-link" id="view-all-circulars-link">View All Updates →</a>
+                        </div>
+                        <div class="dashboard-filters">
+                            <button class="filter-tab active" data-filter="all">All Acts</button>
+                            <button class="filter-tab" data-filter="income-tax">Income Tax</button>
+                            <button class="filter-tab" data-filter="gst">GST Act</button>
+                            <button class="filter-tab" data-filter="companies-act">MCA / Companies</button>
+                            <button class="filter-tab" data-filter="sebi">SEBI</button>
+                        </div>
+                        <!-- List of updates -->
+                        <div class="circulars-list-quick" id="dashboard-circulars-container">
+                            <!-- Circulars injected dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Controller & Quick Chat -->
+                    <div class="dashboard-right-col">
+                        <!-- Scout Config Control Card -->
+                        <div class="dashboard-card control-card">
+                            <h2 class="card-title">AI Scout Control Center</h2>
+                            <p class="card-description">Set preferences for the automated regulatory crawlers</p>
+                            
+                            <div class="scout-sources-list" id="scout-sources-list">
+                                <!-- Rendered dynamically by app.js -->
+                            </div>
+
+                            <div class="scout-config-form">
+                                <div class="form-group">
+                                    <label for="scout-time">Daily Report Time</label>
+                                    <div class="input-with-icon">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                        <input type="time" id="scout-time" value="18:00">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Delivery Channels</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" checked id="notify-email">
+                                            <span class="checkmark"></span> Email PDF Digest
+                                        </label>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" checked id="notify-whatsapp">
+                                            <span class="checkmark"></span> WhatsApp Alert
+                                        </label>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" id="notify-client">
+                                            <span class="checkmark"></span> Auto-notify clients
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="primary-btn full-width" id="run-scout-btn">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" class="animate-spin-hover"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                                    <span>Run Manual Scout Scan</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Mini AI Chat Card -->
+                        <div class="dashboard-card mini-chat-card">
+                            <h2 class="card-title">Ask CA Scout AI</h2>
+                            <p class="card-description">Query recent circulars in plain English</p>
+                            <div class="mini-chat-suggested">
+                                <button class="suggested-prompt-btn">Show GST updates</button>
+                                <button class="suggested-prompt-btn">What is SEBI order?</button>
+                            </div>
+                            <div class="mini-chat-input-wrapper">
+                                <input type="text" id="mini-chat-input" placeholder="e.g. Any updates on income tax extension?">
+                                <button id="mini-chat-send" class="chat-send-btn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB CONTENT: FULL CIRCULARS FEED -->
+            <section id="tab-circulars" class="tab-pane">
+                <div class="feed-controls-bar">
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="circulars-search-input" placeholder="Search by title, section, reference number, or keyword...">
+                    </div>
+                    <div class="feed-filters">
+                        <select id="authority-select" class="custom-select">
+                            <option value="all">All Authorities</option>
+                            <option value="income-tax">Income Tax (CBDT)</option>
+                            <option value="gst">GST Council / CBIC</option>
+                            <option value="companies-act">MCA (Companies Act)</option>
+                            <option value="sebi">SEBI Regulations</option>
+                        </select>
+                        <select id="severity-select" class="custom-select">
+                            <option value="all">All Priority Levels</option>
+                            <option value="critical">Critical / Action Required</option>
+                            <option value="advisory">Advisories & Circulars</option>
+                            <option value="info">General Info / Press Release</option>
+                        </select>
+                        <select id="date-select" class="custom-select">
+                            <option value="48h">Last 48 Hours</option>
+                            <option value="24h">Last 24 Hours</option>
+                            <option value="7d">Last 7 Days</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="circulars-grid" id="full-circulars-container">
+                    <!-- Injected dynamically by JavaScript -->
+                </div>
+            </section>
+
+            <!-- TAB CONTENT: SCOUT CONFIG -->
+            <section id="tab-scout-config" class="tab-pane">
+                <div class="config-container-panel">
+                    <div class="config-section">
+                        <h2>Regulatory Portal Crawler Credentials & URLs</h2>
+                        <p class="section-desc">Manage the crawler endpoints and check status for external government websites.</p>
+                        
+                        <div class="config-table-wrapper">
+                            <table class="config-table">
+                                <thead>
+                                    <tr>
+                                        <th>Authority</th>
+                                        <th>Portal URL</th>
+                                        <th>Status</th>
+                                        <th>Last Connected</th>
+                                        <th>Scrape Mode</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="config-table-body">
+                                    <!-- Rendered dynamically by app.js -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Add New Portal Form -->
+                        <div class="add-portal-form" style="margin-top: 1.5rem; border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
+                            <h3 style="font-family: var(--font-serif); font-size: 1rem; color: var(--color-navy-dark); margin-bottom: 0.8rem;">Connect New Regulatory Portal</h3>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 0.5fr; gap: 1rem; align-items: flex-end;">
+                                <div class="form-group-flex" style="margin-bottom:0;">
+                                    <label style="font-size:0.75rem; font-weight:600; color:var(--color-navy-light);">Authority Name</label>
+                                    <input type="text" id="new-auth-name" placeholder="e.g. Reserve Bank of India" style="width:100%; padding:0.6rem; border:1.5px solid var(--color-border); border-radius:var(--radius-sm); font-size:0.82rem; outline:none;">
+                                </div>
+                                <div class="form-group-flex" style="margin-bottom:0;">
+                                    <label style="font-size:0.75rem; font-weight:600; color:var(--color-navy-light);">Short Code</label>
+                                    <input type="text" id="new-auth-code" placeholder="e.g. RBI" style="width:100%; padding:0.6rem; border:1.5px solid var(--color-border); border-radius:var(--radius-sm); font-size:0.82rem; text-transform:uppercase; outline:none;">
+                                </div>
+                                <div class="form-group-flex" style="margin-bottom:0;">
+                                    <label style="font-size:0.75rem; font-weight:600; color:var(--color-navy-light);">Portal URL</label>
+                                    <input type="url" id="new-auth-url" placeholder="e.g. https://www.rbi.org.in/updates" style="width:100%; padding:0.6rem; border:1.5px solid var(--color-border); border-radius:var(--radius-sm); font-size:0.82rem; outline:none;">
+                                </div>
+                                <button class="primary-btn" id="add-portal-btn" style="padding:0.6rem 1rem; font-size:0.82rem; height:36px; white-space:nowrap; border-radius:var(--radius-sm);">
+                                    <span>Add Portal</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-two-col">
+                        <div class="config-card">
+                            <h3>Scout AI Parser Settings</h3>
+                            <div class="form-group-flex">
+                                <label>AI Model Selection</label>
+                                <select class="custom-select full-width">
+                                    <option>Gemini 3.5 Pro (Law & Tax Tuned)</option>
+                                    <option>Gemini 3.5 Flash (Fast updates)</option>
+                                    <option>DeepMind CA Special Model (v2.4)</option>
+                                </select>
+                            </div>
+                            <div class="form-group-flex">
+                                <label>Prompt Instruction Override</label>
+                                <textarea class="custom-textarea" rows="4">Analyze the attached regulatory document. Draft a clear 'AI Summary' in under 3 bullet points. Extract a concrete, actionable task for a Chartered Accountant under the heading 'Action Required' with deadlines if applicable.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB CONTENT: ARCHIVES -->
+            <section id="tab-archive" class="tab-pane">
+                <div class="archive-header-bar">
+                    <h2>Daily 6:00 PM Compiled Digests</h2>
+                    <p>Access historical PDF compilations and summaries sent to client groups.</p>
+                </div>
+
+                <div class="archive-grid" id="archives-container">
+                    <!-- Injected dynamically by JavaScript -->
+                </div>
+            </section>
+
+            <!-- TAB CONTENT: FULL AI ADVISORY CHAT -->
+            <section id="tab-chat-advisor" class="tab-pane">
+                <div class="chat-container-panel">
+                    <div class="chat-sidebar-history">
+                        <h3>Conversations</h3>
+                        <div class="chat-history-list">
+                            <div class="chat-history-item active">
+                                <p class="chat-history-title">June 28 Updates Summary</p>
+                                <span class="chat-history-date">Today, 09:42 AM</span>
+                            </div>
+                            <div class="chat-history-item">
+                                <p class="chat-history-title">GST Return Filing queries</p>
+                                <span class="chat-history-date">Yesterday, 04:15 PM</span>
+                            </div>
+                            <div class="chat-history-item">
+                                <p class="chat-history-title">SEBI board compliance</p>
+                                <span class="chat-history-date">June 25, 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-main-area">
+                        <div class="chat-messages-container" id="chat-messages-box">
+                            <div class="message system-message">
+                                <p>Welcome to <strong>ScoutCA AI Advisor</strong>. I have indexed all regulatory updates, notifications, circulars, and advisories from the last 48 hours for Income Tax, GST, MCA (Companies Act), and SEBI. Ask me anything.</p>
+                            </div>
+                            <!-- Messages will load dynamically -->
+                        </div>
+
+                        <div class="chat-input-bar">
+                            <input type="text" id="full-chat-input" placeholder="Type your compliance or circular question here... (e.g. What is the latest CBIC notification for GST returns?)">
+                            <button id="full-chat-send" class="primary-btn">
+                                <span>Send Question</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- CRAWLER SCAN SIMULATION MODAL -->
+    <div class="modal-overlay" id="crawler-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-header-title">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#D4AF37" stroke-width="2" fill="none"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                    <h3>AI Scout Regulatory Portal Scan</h3>
+                </div>
+                <button class="close-modal-btn" id="close-modal-x">&times;</button>
+            </div>
+            <div class="modal-body-content">
+                <div class="scanner-progress-bar-container">
+                    <div class="scanner-progress-bar-fill" id="modal-progress-fill"></div>
+                </div>
+                <div class="scanner-status-text">
+                    <span id="modal-status-label">Initializing...</span>
+                    <span id="modal-percent-label">0%</span>
+                </div>
+                <div class="crawler-terminal-logs" id="modal-terminal-logs">
+                    <!-- Logs injected dynamically with typing effect -->
+                </div>
+            </div>
+            <div class="modal-footer-bar">
+                <button class="secondary-btn" id="modal-cancel-btn">Cancel</button>
+                <button class="primary-btn" id="modal-complete-btn" disabled>View New Updates</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW ARCHIVE MODAL -->
+    <div class="modal-overlay" id="view-archive-modal">
+        <div class="modal-card" style="width: 650px; max-width: 95%;">
+            <div class="modal-header" style="background-color: var(--color-navy-dark);">
+                <div class="modal-header-title">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="#D4AF37" stroke-width="2" fill="none" style="display:inline-block; vertical-align:middle;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <h3 id="view-archive-title" style="margin-left: 0.5rem; display:inline-block;">View Digest Summary</h3>
+                </div>
+                <button class="close-modal-btn" id="close-archive-x">&times;</button>
+            </div>
+            <div class="modal-body-content">
+                <div class="archive-report-content" style="background-color: #0E1726; color: #E2E8F0; padding: 1.5rem; border-radius: var(--radius-md); font-family: monospace; font-size: 0.85rem; line-height: 1.6; max-height: 380px; overflow-y: auto; white-space: pre-wrap; border: 1px solid var(--color-border-gold);" id="view-archive-body">
+                    <!-- Populated dynamically by app.js -->
+                </div>
+            </div>
+            <div class="modal-footer-bar">
+                <button class="secondary-btn" id="copy-archive-btn">Copy to Clipboard</button>
+                <button class="primary-btn" id="close-archive-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toast-box"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
