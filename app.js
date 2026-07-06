@@ -73,7 +73,7 @@ let monitoredPortals = [
         id: "mca-updates",
         name: "Ministry of Corporate Affairs (MCA)",
         short: "MCA",
-        url: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html",
+        url: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates.html",
         displayUrl: "mca.gov.in",
         status: "Online",
         lastConnected: "Today, 05:58 AM",
@@ -120,7 +120,7 @@ let circularsDatabase = [
         severity: "info",
         officialText: "The Central Board of Direct Taxes hereby extends the specified due date for furnishing of report of audit under any provision of the Act for the Previous Year 2023-24, which is 30th September, 2024, to 07th October, 2024.",
         actionRequired: "Ensure all client tax audit reports for AY 2024-25 are uploaded on or before the extended deadline of October 7, 2024.",
-        sourceUrl: "https://www.incometaxindia.gov.in/communications/circular/circular-10-2024.pdf"
+        sourceUrl: "https://www.incometaxindia.gov.in/communications/circular/circular-no-10-2024.pdf"
     },
     {
         id: "CIRC_004",
@@ -159,7 +159,7 @@ let circularsDatabase = [
         severity: "critical",
         officialText: "The Ministry has decided to allow companies whose AGMs are due in the year 2024 to conduct their AGMs through VC or OAVM on or before 30th September, 2024, in accordance with the relevant guidelines. It is clarified that this circular does not extend the statutory time for holding AGMs.",
         actionRequired: "Inform clients of the option to hold their AGMs for FY 2023-24 virtually via VC or OAVM by September 30, 2024, ensuring compliance with the prescribed guidelines.",
-        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html"
+        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates.html"
     }
 ];
 
@@ -189,7 +189,7 @@ const defaultScoutedCirculars = [
         severity: "advisory",
         officialText: "This corrigendum corrects errors in the principal Ninth Amendment Rules published on September 20, 2024. It restores the phrase 'or appeal to be filed' in Schedule XXIII and rectifies mathematical omissions in the valuation formulas for appellants in Schedules XII and XX through XXVI.",
         actionRequired: "Apply the corrected valuation formulas in Schedules XII and XX-XXVI for active client appeals under the Vivad Se Vishwas Scheme.",
-        sourceUrl: "https://www.incometaxindia.gov.in/communications/notification/notification-105-2024.pdf"
+        sourceUrl: "https://www.incometaxindia.gov.in/communications/notification/notification-no-105-2024.pdf"
     },
     {
         id: "CIRC_NEW_03",
@@ -215,7 +215,7 @@ const defaultScoutedCirculars = [
         severity: "advisory",
         officialText: "This Form is web-based and is to be used by stakeholders for making requests to Registrar of Companies (RoCs) for correction of master data, or for complying with directions of Courts/Tribunals, which cannot be processed through any existing forms.",
         actionRequired: "Use the newly deployed CRF on the MCA V3 portal when correcting master database errors or applying court directives that cannot be processed via standard filings.",
-        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html"
+        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates.html"
     }
 ];
 
