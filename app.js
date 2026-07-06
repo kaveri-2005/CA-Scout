@@ -23,7 +23,7 @@ let monitoredPortals = [
         id: "income-tax-circulars",
         name: "Income Tax Circulars (CBDT)",
         short: "ITC",
-        url: "https://www.incometaxindia.gov.in/circulars",
+        url: "https://www.incometaxindia.gov.in/pages/communications/circulars.aspx",
         displayUrl: "incometaxindia.gov.in/circulars",
         status: "Online",
         lastConnected: "Today, 06:00 AM",
@@ -33,7 +33,7 @@ let monitoredPortals = [
         id: "income-tax-notifications",
         name: "Income Tax Notifications (CBDT)",
         short: "ITN",
-        url: "https://www.incometaxindia.gov.in/notifications",
+        url: "https://www.incometaxindia.gov.in/pages/communications/notifications.aspx",
         displayUrl: "incometaxindia.gov.in/notifications",
         status: "Online",
         lastConnected: "Today, 06:00 AM",
@@ -43,7 +43,7 @@ let monitoredPortals = [
         id: "income-tax-calendar",
         name: "Income Tax Calendar",
         short: "TAX-CAL",
-        url: "https://www.incometaxindia.gov.in/tax-calendar",
+        url: "https://www.incometaxindia.gov.in/pages/tax-services/tax-calendar.aspx",
         displayUrl: "incometaxindia.gov.in/tax-calendar",
         status: "Online",
         lastConnected: "Today, 06:00 AM",
@@ -88,7 +88,7 @@ let circularsDatabase = [
         authority: "income-tax-calendar",
         sourceName: "Income Tax Calendar",
         refNumber: "Tax Calendar July 2026",
-        title: "Income Tax Calendar: Deposit of TDS/TCS for the month of June 2026",
+        title: "Income Tax Department Tax Calendar - July 2026",
         date: getRelativeDateString(5), // 5 hours ago
         timestamp: CURRENT_TIME.getTime() - 5 * 60 * 60 * 1000,
         severity: "critical",
@@ -100,65 +100,65 @@ let circularsDatabase = [
         id: "CIRC_002",
         authority: "income-tax-notifications",
         sourceName: "Income Tax Notifications (CBDT)",
-        refNumber: "Notification No. 58/2026",
-        title: "Specification of Cost Inflation Index (CII) for FY 2026-27 under Section 48",
+        refNumber: "Notification No. 44/2024",
+        title: "Notification No. 44/2024 - Cost Inflation Index for FY 2024-25",
         date: getRelativeDateString(11), // 11 hours ago
         timestamp: CURRENT_TIME.getTime() - 11 * 60 * 60 * 1000,
         severity: "advisory",
-        officialText: "In exercise of the powers conferred by clause (v) of the Explanation to Section 48 of the Income-tax Act, 1961, the Central Government hereby specifies the Cost Inflation Index for the Financial Year 2026-27 (Assessment Year 2027-28) as 384.",
-        actionRequired: "Use Cost Inflation Index (CII) value of 384 for computing long-term capital gains (LTCG) with indexation benefits for sales in FY 2026-27.",
-        sourceUrl: "https://www.incometaxindia.gov.in/pages/communications/notifications.aspx"
+        officialText: "In exercise of the powers conferred by clause (v) of the Explanation to Section 48 of the Income-tax Act, 1961, the Central Government hereby specifies the Cost Inflation Index for the Financial Year 2024-25 (Assessment Year 2025-26) as 363.",
+        actionRequired: "Use Cost Inflation Index (CII) value of 363 for computing long-term capital gains (LTCG) with indexation benefits for sales in FY 2024-25.",
+        sourceUrl: "https://www.incometaxindia.gov.in/communications/notification/notification-44-2024.pdf"
     },
     {
         id: "CIRC_003",
         authority: "income-tax-circulars",
         sourceName: "Income Tax Circulars (CBDT)",
-        refNumber: "Circular No. 12/2026",
-        title: "Revised Guidelines for Compounding of Offences under the Income-tax Act, 1961",
+        refNumber: "Circular No. 10/2024",
+        title: "Extension of timelines for filing various audit reports for the Assessment Year 2024-25",
         date: getRelativeDateString(19), // 19 hours ago
         timestamp: CURRENT_TIME.getTime() - 19 * 60 * 60 * 1000,
         severity: "info",
-        officialText: "This Circular consolidates guidelines for compounding of offences under the Act, superseding all earlier guidelines. Compounding applications must be filed before the Competent Authority within 12 months from the date of filing of complaint in court. The compounding fee for Section 276B (TDS default) is reduced to 2% per month.",
-        actionRequired: "Identify clients facing prosecution for TDS or tax defaults. Review eligibility under Section 279(2) and file compounding application using the reduced 2% rate.",
-        sourceUrl: "https://www.incometaxindia.gov.in/pages/communications/circulars.aspx"
+        officialText: "The Central Board of Direct Taxes hereby extends the specified due date for furnishing of report of audit under any provision of the Act for the Previous Year 2023-24, which is 30th September, 2024, to 07th October, 2024.",
+        actionRequired: "Ensure all client tax audit reports for AY 2024-25 are uploaded on or before the extended deadline of October 7, 2024.",
+        sourceUrl: "https://www.incometaxindia.gov.in/communications/circular/circular-10-2024.pdf"
     },
     {
         id: "CIRC_004",
         authority: "gst-advisory",
         sourceName: "GST Advisories & Releases (CBIC)",
-        refNumber: "GST Advisory CBIC-DRC-01C",
-        title: "Rollout of Automated Intimation for ITC Mismatches in Form DRC-01C on GST Portal",
+        refNumber: "GST Advisory July 2026",
+        title: "Advisory on Revision of Timeline for Amendment of Aggregate Annual Turnover (AATO)",
         date: getRelativeDateString(25), // 25 hours ago
         timestamp: CURRENT_TIME.getTime() - 25 * 60 * 60 * 1000,
         severity: "advisory",
-        officialText: "Taxpayers are informed that the system will now compare the Input Tax Credit (ITC) available in GSTR-2B with the ITC claimed in GSTR-3B. If the claimed ITC exceeds GSTR-2B by 20% or Rs. 1,00,000, an automated intimation in Form DRC-01C will be issued. The taxpayer must pay the excess amount or explain the difference in Form DRC-01C Part B within 7 days.",
-        actionRequired: "Perform a weekly reconciliation of GSTR-2B and GSTR-3B. Ensure immediate action is taken if a DRC-01C alert is received on the portal to prevent suspension of GST registration.",
+        officialText: "The window for taxpayers to amend their Aggregate Annual Turnover (AATO) on the portal has been revised. To facilitate automatic updation of AATO based on subsequent returns, the window for FY 2025-26 will be open from 01 July 2026 to 31 July 2026. Jurisdictional officers will review amendments from 01 August to 15 August.",
+        actionRequired: "Verify client turnover details and submit necessary AATO amendment applications on the GST portal before the July 31, 2026 deadline.",
         sourceUrl: "https://services.gst.gov.in/services/advisory/advisoryandreleases"
     },
     {
         id: "CIRC_005",
         authority: "ibbi-updates",
         sourceName: "Insolvency & Bankruptcy Board (IBBI)",
-        refNumber: "IBBI/2026-27/GN/REG098",
-        title: "Amendments to Corporate Insolvency Resolution Process (CIRP) Regulations",
+        refNumber: "IBBI/2024/GN/REG115",
+        title: "Insolvency and Bankruptcy Board of India (Insolvency Resolution Process for Corporate Persons) (Second Amendment) Regulations, 2024",
         date: getRelativeDateString(31), // 31 hours ago
         timestamp: CURRENT_TIME.getTime() - 31 * 60 * 60 * 1000,
         severity: "advisory",
-        officialText: "The Insolvency and Bankruptcy Board of India hereby amends the CIRP Regulations. The Resolution Professional (RP) shall appoint two registered valuers within 47 days of the insolvency commencement date. Any interim finance raised during the process must be registered on the central registry platform within 7 days.",
-        actionRequired: "Resolution Professionals must update corporate insolvency logs to align valuer appointments on Day 47. Register all interim funding details on the central portal immediately.",
+        officialText: "The Insolvency and Bankruptcy Board of India hereby notifies the CIRP Second Amendment Regulations. Where the Adjudicating Authority has not appointed an authorized representative, the liquidator or RP shall appoint an interim representative for a class of creditors to ensure effective representation during meetings.",
+        actionRequired: "Ensure representation for homebuyers and class creditors is established by appointing an interim representative as per the Second Amendment Regulations.",
         sourceUrl: "https://ibbi.gov.in/whats-new"
     },
     {
         id: "CIRC_006",
         authority: "mca-updates",
         sourceName: "Ministry of Corporate Affairs (MCA)",
-        refNumber: "Notification F.No. 1/12/2020-CL-V",
-        title: "Compulsory Filing of Form BEN-2 under Companies Significant Beneficial Owners (SBO) Rules",
+        refNumber: "General Circular No. 09/2024",
+        title: "Clarification on holding of Annual General Meeting (AGM) and Extraordinary General Meeting (EGM) through Video Conference (VC) or Other Audio Visual Means (OAVM)",
         date: getRelativeDateString(43), // 43 hours ago
         timestamp: CURRENT_TIME.getTime() - 43 * 60 * 60 * 1000,
         severity: "critical",
-        officialText: "Every company must identify its Significant Beneficial Owners (SBO) and file Form BEN-2 with the Registrar of Companies within 30 days of receiving declarations in Form BEN-1. SBO includes any individual holding indirectly not less than 10% of shares or voting rights in the company through trust or partnership structures.",
-        actionRequired: "Obtain BEN-1 declarations from shareholders who hold holdings through holding companies, trusts, or partnerships. Prepare and file BEN-2 to prevent daily penalties of Rs. 1,000.",
+        officialText: "The Ministry has decided to allow companies whose AGMs are due in the year 2024 to conduct their AGMs through VC or OAVM on or before 30th September, 2024, in accordance with the relevant guidelines. It is clarified that this circular does not extend the statutory time for holding AGMs.",
+        actionRequired: "Inform clients of the option to hold their AGMs for FY 2023-24 virtually via VC or OAVM by September 30, 2024, ensuring compliance with the prescribed guidelines.",
         sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html"
     }
 ];
@@ -169,52 +169,52 @@ const defaultScoutedCirculars = [
         id: "CIRC_NEW_01",
         authority: "gst-advisory",
         sourceName: "GST Advisories & Releases (CBIC)",
-        refNumber: "GST Advisory BIO-REG-2026",
-        title: "Integration of Biometric-based Aadhaar Authentication for GST Registration",
+        refNumber: "GST Advisory IMS-2024",
+        title: "Advisory on Invoice Management System (IMS)",
         date: getRelativeDateString(0.5), // 30 mins ago
         timestamp: CURRENT_TIME.getTime() - 30 * 60 * 1000,
         severity: "critical",
-        officialText: "Biometric-based Aadhaar authentication for GST registration applications has been rolled out across all states. Applicants flagged by the system risk profile will receive an email containing a link to book an appointment at a designated GST Suvidha Kendra. Biometrics and documents must be uploaded within 10 days of booking.",
-        actionRequired: "Advise new clients seeking GST registration to expect biometric verification. Help schedule slots at GST Suvidha Kendras within the 10-day window.",
+        officialText: "The Invoice Management System (IMS) is being introduced on the GST portal to enable taxpayers to accept, reject, or keep pending invoices inwarded from suppliers. This will facilitate matching of invoices and reduce ITC mismatches. The system will go live on the GST portal on 14th October, 2024.",
+        actionRequired: "Guide clients on the new IMS workflow. Implement internal review processes to accept or reject inward invoices weekly starting October 14, 2024.",
         sourceUrl: "https://services.gst.gov.in/services/advisory/advisoryandreleases"
     },
     {
         id: "CIRC_NEW_02",
         authority: "income-tax-notifications",
         sourceName: "Income Tax Notifications (CBDT)",
-        refNumber: "Notification No. 59/2026",
-        title: "Extension of Time Limits for Filing Form 10-IB for Co-operative Societies",
+        refNumber: "Notification No. 105/2024",
+        title: "Corrigendum to Notification G.S.R. 584(E) regarding Income-tax (Ninth Amendment) Rules, 2024",
         date: getRelativeDateString(1), // 1 hour ago
         timestamp: CURRENT_TIME.getTime() - 60 * 60 * 1000,
         severity: "advisory",
-        officialText: "The Central Board of Direct Taxes hereby extends the due date for filing Form 10-IB (exercise of option under Section 115BAD) for co-operative societies for AY 2026-27 from July 31, 2026, to September 30, 2026.",
-        actionRequired: "Identify co-operative society clients. Advise them of the extended September 30 filing timeline for option Form 10-IB.",
-        sourceUrl: "https://www.incometaxindia.gov.in/pages/communications/notifications.aspx"
+        officialText: "This corrigendum corrects errors in the principal Ninth Amendment Rules published on September 20, 2024. It restores the phrase 'or appeal to be filed' in Schedule XXIII and rectifies mathematical omissions in the valuation formulas for appellants in Schedules XII and XX through XXVI.",
+        actionRequired: "Apply the corrected valuation formulas in Schedules XII and XX-XXVI for active client appeals under the Vivad Se Vishwas Scheme.",
+        sourceUrl: "https://www.incometaxindia.gov.in/communications/notification/notification-105-2024.pdf"
     },
     {
         id: "CIRC_NEW_03",
         authority: "ibbi-updates",
         sourceName: "Insolvency & Bankruptcy Board (IBBI)",
-        refNumber: "Circular IBBI/IP/CMP-099",
-        title: "Launch of Online Compliance Monitoring Portal (CMP) for Insolvency Professionals",
+        refNumber: "Circular No. IBBI/IP/064/2024",
+        title: "Circular on facilitating clearance of unclaimed dividends and undistributed assets in liquidation processes",
         date: getRelativeDateString(1.5), // 1.5 hours ago
         timestamp: CURRENT_TIME.getTime() - 90 * 60 * 1000,
         severity: "critical",
-        officialText: "IBBI announces the launch of the new online Compliance Monitoring Portal (CMP). All Insolvency Professionals must submit their monthly disclosures and details of all active assignments on the new portal starting July 10, 2026. Submissions through email or legacy platforms will be discontinued.",
-        actionRequired: "Ensure all team members managing insolvency cases are registered on the new CMP. Check that all active assignment details are updated for the July 10 migration.",
+        officialText: "This circular outlines instructions for facilitating claims on unclaimed dividends and undistributed assets deposited in the Corporate Liquidation Account. Stakeholders can submit Form G to the Board to claim their dues, which will be verified and disbursed online.",
+        actionRequired: "Help creditors and stakeholders track unclaimed dues in liquidation cases and submit Form G online for prompt clearance.",
         sourceUrl: "https://ibbi.gov.in/whats-new"
     },
     {
         id: "CIRC_NEW_04",
         authority: "mca-updates",
         sourceName: "Ministry of Corporate Affairs (MCA)",
-        refNumber: "LLP Circular No. 06/2026",
-        title: "Extension of Due Date for Filing LLP Form 11 (Annual Return) for FY 2025-26",
+        refNumber: "General Circular No. 02/2024",
+        title: "Deployment and usage of Change Request Form (CRF) on MCA-21 V3 Portal",
         date: getRelativeDateString(2), // 2 hours ago
         timestamp: CURRENT_TIME.getTime() - 120 * 60 * 1000,
         severity: "advisory",
-        officialText: "Representations have been received requesting extension of the due date for filing Form 11 (Annual Return of LLP) for the financial year ended March 31, 2026, due to technical issues on the V3 portal. It has been decided to allow LLPs to file Form 11 without additional fees up to July 15, 2026.",
-        actionRequired: "Alert all LLP clients that the Form 11 filing deadline is extended to July 15, 2026. Finalize returns and upload on the V3 portal.",
+        officialText: "This Form is web-based and is to be used by stakeholders for making requests to Registrar of Companies (RoCs) for correction of master data, or for complying with directions of Courts/Tribunals, which cannot be processed through any existing forms.",
+        actionRequired: "Use the newly deployed CRF on the MCA V3 portal when correcting master database errors or applying court directives that cannot be processed via standard filings.",
         sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html"
     }
 ];
@@ -893,21 +893,21 @@ Here is the compiled regulatory compliance summary generated by Scout AI for you
 
 1️⃣ INCOME TAX (CBDT & CALENDAR)
 • TDS/TCS Deposit: June 2026 deposits must be cleared on or before July 7, 2026.
-• Cost Inflation Index (CII): Specified as 384 for FY 2026-27 under Notification No. 58/2026.
-• Compounding Guidelines: Section 276B default fees reduced to 2% per month; 12-month filing limits.
-• Co-operative Societies: Option Form 10-IB filing deadline extended to September 30, 2026.
+• Cost Inflation Index (CII): Specified as 363 for FY 2024-25 under Notification No. 44/2024.
+• Audit Timelines: Timelines for filing various audit reports for AY 2024-25 extended to October 7, 2024 (Circular No. 10/2024).
+• Corrigendum (Ninth Amendment): Corrects formulas and omissions in principal rules under Notification No. 105/2024.
 
 2️⃣ GOODS & SERVICES TAX (GST)
-• Form DRC-01C Mismatches: Automated reconciliation matching GSTR-2B and GSTR-3B ITC claims (7-day response).
-• Biometric Registration: Aadhaar authentication integration active for risk-profiled applications.
+• AATO Amendment: Advisory on Revision of Timeline for Amendment of Aggregate Annual Turnover (AATO) (window open July 1 to July 31, 2026).
+• Invoice Management System (IMS): New portal system to accept/reject inward supplier invoices launching October 14, 2024.
 
 3️⃣ MINISTRY OF CORPORATE AFFAIRS (MCA)
-• SBO Declarations: SBO rules mandate indirect ownership reports in Form BEN-2 in 30 days.
-• LLP Form 11: Annual Return filing deadline extended to July 15, 2026, without late fees.
+• VC AGMs: Clarification on holding AGMs/EGMs virtually through VC or OAVM till September 30, 2024 (General Circular No. 09/2024).
+• V3 Portal Change Request: Web-based Change Request Form (CRF) deployed for master data corrections (General Circular No. 02/2024).
 
 4️⃣ INSOLVENCY & BANKRUPTCY (IBBI)
-• CIRP Valuer Timeline: RP must appoint registered valuers by Day 47 and register funding in 7 days.
-• Compliance Monitoring Portal (CMP): Launch of online portal; legacy email submissions cease July 10, 2026.
+• CIRP Class Creditors: Second Amendment Regulations, 2024 mandating interim representative appointment for class creditors.
+• Unclaimed Dividends: Circular No. IBBI/IP/064/2024 facilitating online claims for unclaimed dividends via Form G.
 
 ==================================================
 This report was compiled and vector-indexed by Scout AI.
@@ -1308,76 +1308,76 @@ function compileAIResponse(query) {
         return customResponse;
     }
 
-    if (q.includes("gst") || q.includes("gstr") || q.includes("taxation") || q.includes("returns")) {
+    if (q.includes("gst") || q.includes("gstr") || q.includes("taxation") || q.includes("returns") || q.includes("aato") || q.includes("turnover")) {
         let returnText = `
             <p>I found the following <strong>GST Advisories & Releases (CBIC)</strong> compliance notifications in our database:</p>
             <ul>
-                <li><strong>GST Advisory CBIC-DRC-01C</strong>: Rollout of automated intimation for GSTR-2B vs GSTR-3B Input Tax Credit (ITC) mismatch (response required in 7 days).</li>
+                <li><strong>GST Advisory July 2026</strong>: Advisory on Revision of Timeline for Amendment of Aggregate Annual Turnover (AATO) (window open from July 1 to July 31).</li>
         `;
         if (hasCrawledData) {
             returnText += `
-                <li><strong>GST Advisory BIO-REG-2026</strong>: Integration of biometric-based Aadhaar authentication for GST registration applications (requires booking Suvidha Kendra appointment in 10 days).</li>
+                <li><strong>GST Advisory IMS-2024</strong>: Advisory on Invoice Management System (IMS) (enabling accept/reject/pending for inward invoices; launching October 14, 2024).</li>
             `;
         }
         returnText += `
             </ul>
-            <p><strong>Recommended CA Action:</strong> Review reconciliation variances in DRC-01C on the portal. Guide new registration applicants to book slots at GST Suvidha Kendras immediately upon receipt of risk-flag notifications.</p>
+            <p><strong>Recommended CA Action:</strong> Verify client aggregate turnover metrics for FY 2025-26 on the portal and submit any required AATO amendment applications before July 31, 2026.</p>
         `;
         return returnText;
     }
 
-    if (q.includes("income tax") || q.includes("itr") || q.includes("tds") || q.includes("tax") || q.includes("calendar")) {
+    if (q.includes("income tax") || q.includes("itr") || q.includes("tds") || q.includes("tax") || q.includes("calendar") || q.includes("cii") || q.includes("audit")) {
         let returnText = `
             <p>Based on the <strong>Income Tax (CBDT)</strong> updates, here is the current assessment:</p>
             <ul>
                 <li><strong>Tax Calendar July 2026</strong>: Deposit of TDS/TCS deducted/collected during June 2026 is due by <strong>July 7, 2026</strong>.</li>
-                <li><strong>Notification No. 58/2026</strong>: Cost Inflation Index (CII) for FY 2026-27 is specified as <strong>384</strong>.</li>
-                <li><strong>Circular No. 12/2026</strong>: Revised compounding guidelines (Section 276B TDS default fee reduced to 2% per month; 12-month limit for applications).</li>
+                <li><strong>Notification No. 44/2024</strong>: Notification No. 44/2024 - Cost Inflation Index for FY 2024-25 (specified as <strong>363</strong>).</li>
+                <li><strong>Circular No. 10/2024</strong>: Extension of timelines for filing various audit reports for the Assessment Year 2024-25 (extended to October 7, 2024).</li>
         `;
         if (hasCrawledData) {
             returnText += `
-                <li><strong>Notification No. 59/2026</strong>: Extension of due date for filing option Form 10-IB for co-operative societies to <strong>September 30, 2026</strong>.</li>
+                <li><strong>Notification No. 105/2024</strong>: Corrigendum to Notification G.S.R. 584(E) regarding Income-tax (Ninth Amendment) Rules, 2024.</li>
             `;
         }
         returnText += `
             </ul>
-            <p><strong>CA Advisory Tip:</strong> Ensure June TDS/TCS deposits are cleared before the July 7 deadline. Apply the new 384 indexation multiplier for capital gains computations, and review active prosecution lists for reduced compounding interest rates.</p>
+            <p><strong>CA Advisory Tip:</strong> Clear June TDS/TCS deposits before the July 7, 2026 deadline. Apply the CII index of 363 for indexation gains on sales made in FY 2024-25, and review timelines for active audit report uploads.</p>
         `;
         return returnText;
     }
 
-    if (q.includes("ibbi") || q.includes("insolvency") || q.includes("bankruptcy") || q.includes("valuer")) {
+    if (q.includes("ibbi") || q.includes("insolvency") || q.includes("bankruptcy") || q.includes("representative") || q.includes("dividend")) {
         let returnText = `
             <p>Here is the compliance brief for the <strong>Insolvency & Bankruptcy Board (IBBI)</strong> regulations:</p>
             <ul>
-                <li><strong>IBBI/2026-27/GN/REG098</strong>: Amendment to CIRP rules requiring Resolution Professional to appoint registered valuers within 47 days and register interim finance within 7 days.</li>
+                <li><strong>IBBI/2024/GN/REG115</strong>: Insolvency and Bankruptcy Board of India (Insolvency Resolution Process for Corporate Persons) (Second Amendment) Regulations, 2024 (appointment of interim representative for class creditors).</li>
         `;
         if (hasCrawledData) {
             returnText += `
-                <li><strong>Circular IBBI/IP/CMP-099</strong>: Launch of the new online Compliance Monitoring Portal (CMP). Disclosures must be updated on this portal by July 10, 2026.</li>
+                <li><strong>Circular No. IBBI/IP/064/2024</strong>: Circular on facilitating clearance of unclaimed dividends and undistributed assets in liquidation processes (Form G online clearance).</li>
             `;
         }
         returnText += `
             </ul>
-            <p><strong>Compliance Check:</strong> Ensure valuer scheduling is aligned to Day 47 for CIRP cases, and prepare credentials for the July 10 CMP portal migration.</p>
+            <p><strong>Compliance Check:</strong> Ensure that an interim representative is appointed for homebuyers/creditors in active CIRP assignments where the authorised representative is pending appointment.</p>
         `;
         return returnText;
     }
 
-    if (q.includes("mca") || q.includes("companies act") || q.includes("roc") || q.includes("company") || q.includes("llp") || q.includes("sbo") || q.includes("ben-2")) {
+    if (q.includes("mca") || q.includes("companies act") || q.includes("roc") || q.includes("company") || q.includes("llp") || q.includes("agm") || q.includes("crf") || q.includes("v3")) {
         let returnText = `
             <p>I located the following <strong>Ministry of Corporate Affairs (MCA)</strong> compliance updates:</p>
             <ul>
-                <li><strong>Notification F.No. 1/12/2020-CL-V</strong>: Compulsory identification of Significant Beneficial Owners (SBO) and filing Form BEN-2 in 30 days.</li>
+                <li><strong>General Circular No. 09/2024</strong>: Clarification on holding of Annual General Meeting (AGM) and Extraordinary General Meeting (EGM) through Video Conference (VC) or Other Audio Visual Means (OAVM) (permitting VC AGMs on or before September 30, 2024).</li>
         `;
         if (hasCrawledData) {
             returnText += `
-                <li><strong>LLP Circular No. 06/2026</strong>: Extension of due date for filing LLP Form 11 (Annual Return) for FY 2025-26 to <strong>July 15, 2026</strong> without late fees.</li>
+                <li><strong>General Circular No. 02/2024</strong>: Deployment and usage of Change Request Form (CRF) on MCA-21 V3 Portal (for master data correction request filings).</li>
             `;
         }
         returnText += `
             </ul>
-            <p><strong>Action Point:</strong> Audit client profiles for trust/partnership shareholders to prepare BEN-2 filings. Finalize pending LLP Form 11 returns for upload on the V3 portal before the extended July 15 deadline.</p>
+            <p><strong>Action Point:</strong> Inform corporate clients that virtual AGMs for FY 2023-24 are allowed till September 30, 2024. For master data discrepancies on the V3 portal, utilize the new CRF web form.</p>
         `;
         return returnText;
     }
@@ -1387,10 +1387,10 @@ function compileAIResponse(query) {
         <p>I've analyzed the circulars database for <em>"${escapeHTML(query)}"</em>.</p>
         <p>Currently, there are <strong>${circularsDatabase.length} active updates</strong> in our database. You can ask me details about:</p>
         <ul>
-            <li><strong>Income Tax notifications</strong> (CII rate, compounding rules, TDS calendar due dates).</li>
-            <li><strong>GST advisories</strong> (Form DRC-01C mismatch, Aadhaar registration biometrics).</li>
-            <li><strong>MCA Companies Act</strong> (Form BEN-2 SBO disclosures, LLP Form 11 extensions).</li>
-            <li><strong>IBBI insolvency rules</strong> (CIRP valuer timelines, Compliance Monitoring Portal).</li>
+            <li><strong>Income Tax notifications</strong> (CII rates, audit timeline extensions, TDS calendar due dates).</li>
+            <li><strong>GST advisories</strong> (AATO turnover amendment windows, Invoice Management System).</li>
+            <li><strong>MCA Companies Act</strong> (Virtual AGM extensions, V3 portal Change Request Form CRF).</li>
+            <li><strong>IBBI insolvency rules</strong> (CIRP interim representatives, liquidation unclaimed dividends).</li>
             ${monitoredPortals.filter(p => !["income-tax-circulars", "income-tax-notifications", "income-tax-calendar", "gst-advisory", "ibbi-updates", "mca-updates"].includes(p.id)).map(p => `<li><strong>${p.short} updates</strong> (custom portal connected).</li>`).join('')}
         </ul>
         <p>Would you like me to compile a draft advisory letter for any of these specific areas?</p>
