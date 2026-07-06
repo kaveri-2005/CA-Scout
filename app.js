@@ -94,7 +94,7 @@ let circularsDatabase = [
         severity: "critical",
         officialText: "All tax deductors and collectors are required to deposit TDS/TCS deducted/collected during the month of June 2026 on or before July 7, 2026. The deposit must be made via challan-cum-statement on the e-filing portal.",
         actionRequired: "Ensure all TDS/TCS deductions/collections for June 2026 are verified and deposited by July 7, 2026, to avoid 1.5% per month interest under Section 201(1A).",
-        sourceUrl: "https://www.incometaxindia.gov.in/tax-calendar"
+        sourceUrl: "https://www.incometaxindia.gov.in/pages/tax-services/tax-calendar.aspx"
     },
     {
         id: "CIRC_002",
@@ -107,7 +107,7 @@ let circularsDatabase = [
         severity: "advisory",
         officialText: "In exercise of the powers conferred by clause (v) of the Explanation to Section 48 of the Income-tax Act, 1961, the Central Government hereby specifies the Cost Inflation Index for the Financial Year 2026-27 (Assessment Year 2027-28) as 384.",
         actionRequired: "Use Cost Inflation Index (CII) value of 384 for computing long-term capital gains (LTCG) with indexation benefits for sales in FY 2026-27.",
-        sourceUrl: "https://www.incometaxindia.gov.in/communications/notification/notification-58-2026.pdf"
+        sourceUrl: "https://www.incometaxindia.gov.in/pages/communications/notifications.aspx"
     },
     {
         id: "CIRC_003",
@@ -120,7 +120,7 @@ let circularsDatabase = [
         severity: "info",
         officialText: "This Circular consolidates guidelines for compounding of offences under the Act, superseding all earlier guidelines. Compounding applications must be filed before the Competent Authority within 12 months from the date of filing of complaint in court. The compounding fee for Section 276B (TDS default) is reduced to 2% per month.",
         actionRequired: "Identify clients facing prosecution for TDS or tax defaults. Review eligibility under Section 279(2) and file compounding application using the reduced 2% rate.",
-        sourceUrl: "https://www.incometaxindia.gov.in/communications/circular/circular-12-2026.pdf"
+        sourceUrl: "https://www.incometaxindia.gov.in/pages/communications/circulars.aspx"
     },
     {
         id: "CIRC_004",
@@ -133,7 +133,7 @@ let circularsDatabase = [
         severity: "advisory",
         officialText: "Taxpayers are informed that the system will now compare the Input Tax Credit (ITC) available in GSTR-2B with the ITC claimed in GSTR-3B. If the claimed ITC exceeds GSTR-2B by 20% or Rs. 1,00,000, an automated intimation in Form DRC-01C will be issued. The taxpayer must pay the excess amount or explain the difference in Form DRC-01C Part B within 7 days.",
         actionRequired: "Perform a weekly reconciliation of GSTR-2B and GSTR-3B. Ensure immediate action is taken if a DRC-01C alert is received on the portal to prevent suspension of GST registration.",
-        sourceUrl: "https://services.gst.gov.in/services/advisory/advisoryandreleases/drc-01c-adv.pdf"
+        sourceUrl: "https://services.gst.gov.in/services/advisory/advisoryandreleases"
     },
     {
         id: "CIRC_005",
@@ -146,7 +146,7 @@ let circularsDatabase = [
         severity: "advisory",
         officialText: "The Insolvency and Bankruptcy Board of India hereby amends the CIRP Regulations. The Resolution Professional (RP) shall appoint two registered valuers within 47 days of the insolvency commencement date. Any interim finance raised during the process must be registered on the central registry platform within 7 days.",
         actionRequired: "Resolution Professionals must update corporate insolvency logs to align valuer appointments on Day 47. Register all interim funding details on the central portal immediately.",
-        sourceUrl: "https://ibbi.gov.in/uploads/whatsnew/cirp-amendment-regulations-2026.pdf"
+        sourceUrl: "https://ibbi.gov.in/whats-new"
     },
     {
         id: "CIRC_006",
@@ -159,7 +159,7 @@ let circularsDatabase = [
         severity: "critical",
         officialText: "Every company must identify its Significant Beneficial Owners (SBO) and file Form BEN-2 with the Registrar of Companies within 30 days of receiving declarations in Form BEN-1. SBO includes any individual holding indirectly not less than 10% of shares or voting rights in the company through trust or partnership structures.",
         actionRequired: "Obtain BEN-1 declarations from shareholders who hold holdings through holding companies, trusts, or partnerships. Prepare and file BEN-2 to prevent daily penalties of Rs. 1,000.",
-        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates-ben-2.html"
+        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html"
     }
 ];
 
@@ -176,7 +176,7 @@ const defaultScoutedCirculars = [
         severity: "critical",
         officialText: "Biometric-based Aadhaar authentication for GST registration applications has been rolled out across all states. Applicants flagged by the system risk profile will receive an email containing a link to book an appointment at a designated GST Suvidha Kendra. Biometrics and documents must be uploaded within 10 days of booking.",
         actionRequired: "Advise new clients seeking GST registration to expect biometric verification. Help schedule slots at GST Suvidha Kendras within the 10-day window.",
-        sourceUrl: "https://services.gst.gov.in/services/advisory/advisoryandreleases/biometric-auth-rules.pdf"
+        sourceUrl: "https://services.gst.gov.in/services/advisory/advisoryandreleases"
     },
     {
         id: "CIRC_NEW_02",
@@ -189,7 +189,7 @@ const defaultScoutedCirculars = [
         severity: "advisory",
         officialText: "The Central Board of Direct Taxes hereby extends the due date for filing Form 10-IB (exercise of option under Section 115BAD) for co-operative societies for AY 2026-27 from July 31, 2026, to September 30, 2026.",
         actionRequired: "Identify co-operative society clients. Advise them of the extended September 30 filing timeline for option Form 10-IB.",
-        sourceUrl: "https://www.incometaxindia.gov.in/communications/notification/notification-59-2026.pdf"
+        sourceUrl: "https://www.incometaxindia.gov.in/pages/communications/notifications.aspx"
     },
     {
         id: "CIRC_NEW_03",
@@ -202,7 +202,7 @@ const defaultScoutedCirculars = [
         severity: "critical",
         officialText: "IBBI announces the launch of the new online Compliance Monitoring Portal (CMP). All Insolvency Professionals must submit their monthly disclosures and details of all active assignments on the new portal starting July 10, 2026. Submissions through email or legacy platforms will be discontinued.",
         actionRequired: "Ensure all team members managing insolvency cases are registered on the new CMP. Check that all active assignment details are updated for the July 10 migration.",
-        sourceUrl: "https://ibbi.gov.in/uploads/whatsnew/cmp-portal-launch-circular.pdf"
+        sourceUrl: "https://ibbi.gov.in/whats-new"
     },
     {
         id: "CIRC_NEW_04",
@@ -215,7 +215,7 @@ const defaultScoutedCirculars = [
         severity: "advisory",
         officialText: "Representations have been received requesting extension of the due date for filing Form 11 (Annual Return of LLP) for the financial year ended March 31, 2026, due to technical issues on the V3 portal. It has been decided to allow LLPs to file Form 11 without additional fees up to July 15, 2026.",
         actionRequired: "Alert all LLP clients that the Form 11 filing deadline is extended to July 15, 2026. Finalize returns and upload on the V3 portal.",
-        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates-form11-extension.html"
+        sourceUrl: "https://www.mca.gov.in/content/mca/global/en/notifications-tender/news-updates/updates.html"
     }
 ];
 
